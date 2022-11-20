@@ -1,6 +1,6 @@
-import { DateTime } from 'luxon'
+const { DateTime } = require('luxon')
 
-export default function (eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/style.css')
   eleventyConfig.addPassthroughCopy('./src/assets')
 
